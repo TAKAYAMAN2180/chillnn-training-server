@@ -8,7 +8,7 @@
   "dependencies": {
     "aws-lambda": "^1.0.7",
     "aws-sdk": "^2.1037.0",
-    "chillnn-training-abr": "git+ssh://git@github.com:CHILLNN-Training/chillnn-training-abr.git#dev"
+    "chillnn-training-abr": "git+ssh://git@github.com:TAKAYAMAN2180/chillnn-training-abr.git#dev"
   },
   "devDependencies": {
     "@graphql-codegen/add": "^3.1.0",
@@ -27,7 +27,7 @@
     "webpack-node-externals": "^3.0.0"
   },
   "scripts": {
-    "abr": "sh node_modules/chillnn-training-abr/pull.sh",
+    "abr": "bash node_modules/chillnn-training-abr/pull.sh",
     "codegen": "graphql-codegen --config codegen.yml",
     "deploy": "sh cleanSchema.sh"
   },

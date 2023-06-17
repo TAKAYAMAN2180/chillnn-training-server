@@ -15,6 +15,8 @@ dev.yml
 
 # tsc
 lib
+aws
+awscliv2.zip
 
 yarn.lock
 

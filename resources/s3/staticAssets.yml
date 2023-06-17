@@ -21,6 +21,11 @@ Resources:
                       MaxAge: 3000
                       ExposedHeaders:
                           - ETag
+            PublicAccessBlockConfiguration:
+                BlockPublicAcls: false
+                BlockPublicPolicy: false
+                IgnorePublicAcls: false
+                RestrictPublicBuckets: false
     ## Bucket
     StaticAssetsS3BucketPolicy:
         Type: AWS::S3::BucketPolicy
