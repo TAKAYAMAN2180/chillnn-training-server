@@ -22,7 +22,7 @@ export class DynamoDBPostMastRepository extends DynamoDBRepositoryBase<PostMast>
     public async deletePost(postID: string): Promise<PostMast> {
         const current = await this.fetchPostByPostID(postID);
         if (!current) {
-            throw new Error('404 resouce not exist');
+            throw new Error('404 resource not exist');
         }
         return this.deleteItem({
             TableName: this.tableName,

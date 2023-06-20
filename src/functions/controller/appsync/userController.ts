@@ -6,6 +6,8 @@ type UserAction =
     // post
     | 'AddPost'
     | 'DeletePost'
+    // comment
+    | 'AddComment'
     // user
     | 'UpdateUserMast';
 
@@ -29,6 +31,14 @@ export const handler: Handler = async (
             case 'DeletePost':
                 response = await repositoryContainer.postMastRepository.deletePost(event.input);
                 break;
+
+            // ==================================================
+            // Comment
+            // ==================================================
+            case "AddComment":
+                response = await repositoryContainer.commentMastRepository.addComment(event.input);
+                break;
+
             // ==================================================
             // User
             // ==================================================

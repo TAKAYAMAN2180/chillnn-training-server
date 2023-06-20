@@ -10,6 +10,10 @@ type Mutation {
     addPost(input: PostMastInput!): PostMast!
     deletePost(postID: ID!): PostMast!
     ########################################
+    # comment
+    ########################################
+    addComment(input: CommentMastInput!): CommentMast!
+    ########################################
     # user
     ########################################
     updateUserMast(input: UserMastInput!): UserMast!
@@ -21,6 +25,10 @@ type Query {
     ########################################
     fetchPostsByOwnerUserID(userID: ID!): [PostMast!]!
     fetchPostByPostID(postID: ID!): PostMast
+    ########################################
+    # comment
+    ########################################
+    fetchCommentsByPostID(postID: ID!): [CommentMast!]!
     ########################################
     # user
     ########################################

@@ -29,6 +29,19 @@
   request: postMast/fetchPostByPostID/req.vtl
   response: postMast/fetchPostByPostID/res.vtl
 ##################################################
+# comment
+##################################################
+- dataSource: controller
+  type: Mutation
+  field: addComment
+  request: commentMast/addComment/req.vtl
+  response: commentMast/addComment/res.vtl
+- dataSource: controller
+  type: Query
+  field: fetchCommentsByPostID
+  request: commentMast/fetchCommentsByPostID/req.vtl
+  response: commentMast/fetchCommentsByPostID/res.vtl
+##################################################
 # user
 ##################################################
 - dataSource: controller
