@@ -1,9 +1,9 @@
 {
-    "version": "2023-06-20",
+    "version": "2018-05-29",
     "operation": "Invoke",
     "payload": {
         "input": $util.toJson($ctx.args.input),
-        "action": $util.toJson("UpdateUserMast"),
+        "action": $util.toJson("AddComment"),
         "userID": $util.toJson($ctx.identity.username)
     }
 }

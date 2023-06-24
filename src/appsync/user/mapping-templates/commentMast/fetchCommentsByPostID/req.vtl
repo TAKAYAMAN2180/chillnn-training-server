@@ -4,7 +4,7 @@
     "query": {
         "expression": "PK = :PK",
         "expressionValues": {
-            ":PK": $util.dynamodb.toDynamoDBJson("Post#${ctx.args.userID}")
+            ":PK": $util.dynamodb.toDynamoDBJson("Comment#${ctx.args.postID}")
         }
     },
 }

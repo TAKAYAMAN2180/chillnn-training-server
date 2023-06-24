@@ -36,7 +36,7 @@
   field: addComment
   request: commentMast/addComment/req.vtl
   response: commentMast/addComment/res.vtl
-- dataSource: controller
+- dataSource: masterTable
   type: Query
   field: fetchCommentsByPostID
   request: commentMast/fetchCommentsByPostID/req.vtl
